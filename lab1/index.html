@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <title> lab 1 </title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        
+        <div class="name">
+            Samoylova Ann Dmitrievna P33211
+        </div>
+        <div class="content">
+            <div class="parametres">
+                <form method="post">
+                    <div class="x">
+                        X:
+                        <table>
+                            <tr>
+                                <td><label><input name="paramx" type="radio" value=-3>-3</label></td>
+                                <td><label><input name="paramx" type="radio" value=-2>-2</label></td>
+                                <td><label><input name="paramx" type="radio" value=-1>-1</label></td>
+                            </tr>
+                            <tr>
+                                <td><label><input name="paramx" type="radio" value=0> 0</label></td>
+                                <td><label><input name="paramx" type="radio" value=1> 1</label></td>
+                                <td><label><input name="paramx" type="radio" value=2> 2</label></td>
+                            </tr>
+                            <tr>
+                                <td><label><input name="paramx" type="radio" value=3> 3</label></td>
+                                <td><label><input name="paramx" type="radio" value=4> 4</label></td>
+                                <td><label><input name="paramx" type="radio" value=5> 5</label></td>
+                            </tr>
+                        </table>
+                        <div class="validation" id="validation_x"></div>
+                    </div><br>
+                    <div class="y">
+                        <label> 
+                            Y: <input type="text" name="paramy" id="paramy">
+                        </label>
+                        <div class="validation" id="validation_y"></div>
+                    </div><br>
+                    <div class="r">
+                        <label> 
+                            R: <input type="text" name="paramr" id="paramr"></label>
+                        <div class="validation" id="validation_r"></div>
+                    </div> <br>
+                    <div class="buttons">
+                        <input type="button" onclick="checkParameterValue()" value="check">
+                    </div>
+                </form> 
+                <div class="picture">
+                <img src="style/source/areas.png" class="area_picture">
+                </div>
+            </div>
+            <div class="answer"> RESULT:
+                <div id="answer">
+                    Enter parameters to see the result
+                </div>
+            </div>
+            
+        </div>
+    
+        
+    </body>
+</htlm>
